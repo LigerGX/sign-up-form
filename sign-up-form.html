@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">
-  <title>Sign-Up Form</title>
-</head>
-<body>
-  <div class="body-wrapper">
-    <div class="side-banner"><h1>Side Banner</h1></div>
-    <article class="main-content">
-      <aside><h1>Random Spiel</h1></aside>
-      <form class="sign-up">
-        <div><h1>Form Inputs</h1></div>
-        <div><h1>Form Confirmation</h1></div>
-      </form>
-    </article>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign-Up Form</title>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="side-banner"><h1>Side Banner</h1></div>
+      <article class="main-content">
+        <aside><h1>Random Spiel</h1></aside>
+        <form class="sign-up">
+          <div>
+            <h1>Sign-Up</h1>
+            <div>
+              <label for="first_name">First Name</label><br />
+              <input id="first_name" name="first_name" />
+            </div>
+
+            <div>
+              <label for="last_name">Last Name</label><br />
+              <input id="last_name" name="last_name" />
+            </div>
+
+            <div>
+              <label for="email">Email</label><br />
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div>
+              <label for="phone_number">Phone Number</label><br />
+              <input id="phone_number" name="phone_number" />
+              <!--probably use regex validation for this-->
+            </div>
+
+            <div>
+              <label for="password">Password</label><br />
+              <input type="password" id="password" name="password" />
+            </div>
+
+            <div>
+              <label for="confirm_password">Confirm Password</label><br />
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+              />
+            </div>
+          </div>
+          <div><h1>Form Confirmation</h1></div>
+        </form>
+      </article>
+    </div>
+  </body>
 </html>

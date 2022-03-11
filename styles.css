@@ -28,12 +28,22 @@ html, body {
   background-color: #1D3557;
 }
 
-
 /*** Sign Up ***/
 
 .sign-up {
   display: grid;
   grid-template-rows: 70% 30%;
+}
+
+.sign-up > div:first-child {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 300px 300px;
+}
+
+.sign-up > div:first-child > h1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .sign-up > div:last-child {
