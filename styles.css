@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+  background-color: #F1FAEE;
+}
+
+.body-wrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100%;
+  width: 100%;
+}
+
+.side-banner {
+  background-color: #E63946;
+}
+
+/*** Main Content ***/
+
+.main-content {
+  display: grid;
+  grid-template-rows: 30% 70%;
+  margin: auto 0;
+  height: 75%;
+  background-color: #457B9D;
+}
+
+.main-content > aside {
+  background-color: #1D3557;
+}
+
+
+/*** Sign Up ***/
+
+.sign-up {
+  display: grid;
+  grid-template-rows: 70% 30%;
+}
+
+.sign-up > div:last-child {
+  background-color: #A8DADC;
+}
