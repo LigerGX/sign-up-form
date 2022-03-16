@@ -3,6 +3,7 @@ body {
   height: 100%;
   background-color: #f9fafb;
   box-sizing: border-box;
+  font-family: 'Poppins';
 }
 
 *,
@@ -26,8 +27,47 @@ p {
   width: 100%;
 }
 
+/*** Side Banner  ***/
+
 .side-banner {
-  background-color: #e63946;
+  position: relative;
+}
+
+.side-banner > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.side-banner > p {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+}
+
+.side-banner > p > a:link {
+  color: white;
+}
+
+.side-banner > p > a:visited {
+  color: white;
+}
+
+.banner-title {
+  position: absolute;
+  top: 200px;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner-title > p {
+  color: white;
+  font-size: 64px;
+  font-family: 'Comfortaa';
+  text-align: center;
 }
 
 /*** Main Content ***/
@@ -37,7 +77,6 @@ p {
   grid-template-rows: 25% 75%;
   margin: auto 0;
   height: 75%;
-  font-family: 'Poppins';
 }
 
 .main-content > aside {
