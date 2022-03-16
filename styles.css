@@ -1,6 +1,22 @@
-html, body {
+html,
+body {
   height: 100%;
-  background-color: #F1FAEE;
+  background-color: #f9fafb;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0px;
 }
 
 .body-wrapper {
@@ -11,34 +27,54 @@ html, body {
 }
 
 .side-banner {
-  background-color: #E63946;
+  background-color: #e63946;
 }
 
 /*** Main Content ***/
 
 .main-content {
   display: grid;
-  grid-template-rows: 30% 70%;
+  grid-template-rows: 25% 75%;
   margin: auto 0;
   height: 75%;
-  background-color: #457B9D;
+  font-family: 'Poppins';
 }
 
 .main-content > aside {
-  background-color: #1D3557;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 128px 16px 32px;
+  font-size: 20px;
+}
+
+.main-content > aside > p {
+  margin-bottom: 16px;
 }
 
 /*** Sign Up ***/
 
 .sign-up {
   display: grid;
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 75% 25%;
 }
 
 .sign-up > div:first-child {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 250px 250px;
+  column-gap: 64px;
+  padding: 12px 32px;
+  box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.sign-up > div:first-child > div > input {
+  width: 250px;
+}
+
+.sign-up > div:first-child > div > label {
+  color: rgb(58, 58, 58);
 }
 
 .sign-up > div:first-child > h1 {
@@ -47,5 +83,20 @@ html, body {
 }
 
 .sign-up > div:last-child {
-  background-color: #A8DADC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 32px;
+}
+
+.sign-up > div:last-child > button {
+  margin: 16px 0px;
+  align-self: start;
+  min-height: 44px;
+  padding: 0.25em 1.5em;
+  border: 0px;
+  border-radius: 8px;
+  background-color: #5a8b5d;
+  color: white;
+  font-weight: bold;
 }
