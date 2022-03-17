@@ -74,9 +74,9 @@ p {
 
 .main-content {
   display: grid;
-  grid-template-rows: 25% 75%;
+  grid-template-rows: 30% 70%;
   margin: auto 0;
-  height: 75%;
+  height: 65%;
 }
 
 .main-content > aside {
