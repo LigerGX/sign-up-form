@@ -110,10 +110,14 @@ p {
 
 .sign-up > div:first-child > div > input {
   width: 250px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 4px;
+  padding: 4px;
+  background-color: rgb(250, 250, 250);
 }
 
 .sign-up > div:first-child > div > label {
-  color: rgb(58, 58, 58);
+  color: rgb(73, 73, 73);
 }
 
 .sign-up > div:first-child > h1 {
@@ -138,4 +142,9 @@ p {
   background-color: #5a8b5d;
   color: white;
   font-weight: bold;
+}
+
+.sign-up > div:last-child > button:hover {
+  background-color: #4b744e;
+  transition: 150ms;
 }
